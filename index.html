@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball scorecard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h3>HOME</h3>
+      <h2 id="home-score" class="display">0</h2>
+      <div class="btn">
+        <button onclick="homeAddOne()" id="home1">+1</button>
+        <button onclick="homeAddTwo()" id="home2">+2</button>
+        <button onclick="homeaddThree()" id="home3">+3</button>
+      </div>
+      <div class="resetdiv">
+        <button onclick="resetAll()" id="reset-home" class="reset">NEW GAME</button>
+      </div>
+
+    </div>
+    <div>
+      <h3>AWAY</h3>
+      <h2 id="guest-score" class="display">0</h2>
+      <div class="btn">
+        <button onclick="guestAddOne()" id="guest1">+1</button>
+        <button onclick="guestAddTwo()" id="guest2">+2</button>
+        <button onclick="guestAddThree()" id="guest3">+3</button>
+
+      </div>
+      <div class="resetdiv">
+        <button onclick="resetAll2()" id="reset-guest"  class="reset">NEW GAME</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
